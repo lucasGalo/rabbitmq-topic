@@ -12,7 +12,7 @@
    ``` 
 3. **Tag do build**
    ```bash
-        docker tag b1482c6905db lucasgalo/rabbitmq-topic:0.1.1
+        docker tag bda78ed61246 lucasgalo/rabbitmq-topic:0.1.1
    ```
 4. **Login dockerhub**
    ```bash
