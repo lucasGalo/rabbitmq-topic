@@ -11,3 +11,19 @@ spring:
 
 server:
   port: ${SERVER_PORT:8082}
+
+
+# ===============================
+# = ACTUATOR
+# ===============================
+management:
+  endpoints:
+    web:
+      exposure:
+        include: [ "prometheus" ]
+  metrics:
+    tags:
+      application: ${spring.application.name}
+    export:
+      prometheus:
+        enabled: true

@@ -4,15 +4,15 @@
 
 1. **Deletar imagens antigas**
     ```bash
-        docker rmi rabbitmq-topic:0.1.1
+        docker rmi rabbitmq-topic:0.1.2
     ``` 
 2. **Build do projeto**
     ```bash
-   docker build -t rabbitmq-topic:0.1.1 -f docker/Dockerfile .   
+   docker build -t rabbitmq-topic:0.1.2 -f docker/Dockerfile .   
    ``` 
 3. **Tag do build**
    ```bash
-        docker tag bda78ed61246 lucasgalo/rabbitmq-topic:0.1.1
+        docker tag 31f07721546d lucasgalo/rabbitmq-topic:0.1.2
    ```
 4. **Login dockerhub**
    ```bash
@@ -20,5 +20,5 @@
    ```
 5. **Push da tag**
     ```bash
-        docker push lucasgalo/rabbitmq-topic:0.1.1
+        docker push lucasgalo/rabbitmq-topic:0.1.2
     ```
