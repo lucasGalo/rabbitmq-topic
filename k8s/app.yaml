@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: 'https://github.com/lucasGalo/rabbitmq-docker-example.git'
+    repoURL: 'ttps://github.com/lucasGalo/rabbitmq-topic.git'
     targetRevision: main
     path: k8s
   destination:
