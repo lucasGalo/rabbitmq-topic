@@ -14,9 +14,9 @@ spec:
     spec:
       containers:
         - name: springboot-rabbitmq
-          image: lucasgalo/rabbitmq-topic:0.1.4   # substitua pela sua imagem
+          image: lucasgalo/rabbitmq-topic:0.1.5   # substitua pela sua imagem
           ports:
-            - containerPort: 8080
+            - containerPort: 8282
           env:
             - name: SPRING_RABBITMQ_HOST
               value: "rabbitmq"                # nome do Service RabbitMQ
@@ -38,8 +38,8 @@ spec:
   selector:
     app: springboot-rabbitmq
   ports:
-    - port: 8080        # porta interna do pod
-      targetPort: 8080  # porta do container
-      nodePort: 30088   # porta externa válida (faixa 30000–32767)
+    - port: 8282        # porta interna do pod
+      targetPort: 8282  # porta do container
+      nodePort: 30099   # porta externa válida (faixa 30000–32767)
       protocol: TCP
       name: http
