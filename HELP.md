@@ -32,7 +32,7 @@ Para subir a imagem no ArgoCD, lembrar de subir uma img no dockerhub, para isso,
 
 ### Testar o actuator/prometheus
 Acesse o endpoint
-http://localhost:8282/actuator/prometheus
+http://localhost:8082/actuator/prometheus
 
 
 explorar:

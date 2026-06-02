@@ -3,14 +3,14 @@ spring:
     name: RabbitMQ-Topic
 
   rabbitmq:
-    host: 192.168.0.100      # 192.168.0.100
+    host: rabbitmq      # 192.168.0.100 rabbitmq
     port: 5672          # Porta AMQP correta
     username: admin     # usuário definido no docker-compose
     password: admin123  # senha definida no docker-compose
     virtual-host: /
 
 server:
-  port: ${SERVER_PORT:8282}
+  port: ${SERVER_PORT:8082}
 
 
 # ===============================
