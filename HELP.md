@@ -29,3 +29,11 @@ If you manually switch to a different parent and actually want the inheritance, 
 
 ### Start
 Para subir a imagem no ArgoCD, lembrar de subir uma img no dockerhub, para isso, seguir os passos do DOCKER.md
+
+### Testar o actuator/prometheus
+Acesse o endpoint
+http://localhost:8282/actuator/prometheus
+
+
+explorar:
+https://www.youtube.com/watch?v=zuZemCJb1YE&t=2303s
