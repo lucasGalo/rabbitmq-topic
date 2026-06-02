@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: springboot-rabbitmq-2
+  name: springboot-rabbitmq
   namespace: argocd
 spec:
   project: default
