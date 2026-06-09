@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: springboot-rabbitmq
 spec:
-  replicas: 5
+  replicas: 2
   selector:
     matchLabels:
       app: springboot-rabbitmq
