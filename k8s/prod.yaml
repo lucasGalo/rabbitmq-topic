@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: springboot-rabbitmq
-          image: lucasgalo/rabbitmq-topic:0.1.9   # substitua pela sua imagem
+          image: lucasgalo/rabbitmq-topic:0.1.10   # substitua pela sua imagem
           ports:
             - containerPort: 8082
           env:
@@ -28,6 +28,8 @@ spec:
               value: "admin123"
             - name: SPRING_RABBITMQ_VIRTUAL_HOST
               value: "/"
+            - name: URL_OPENZIPKIN
+              value: "http://zipkin:9411/api/v2/spans"
 ---
 apiVersion: v1
 kind: Service
