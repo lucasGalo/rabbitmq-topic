@@ -8,6 +8,15 @@ spring:
     username: admin     # usuário definido no docker-compose
     password: admin123  # senha definida no docker-compose
     virtual-host: /
+# ===============================
+# = OPENZIPKIN
+# ===============================
+  zipkin:
+    base-url: http://zipkin:9411
+  sleuth:
+    sampler:
+      probability: 1.0
+
 
 server:
   port: ${SERVER_PORT:8082}
@@ -27,3 +36,8 @@ management:
     export:
       prometheus:
         enabled: true
+#
+#  tracing:
+#    enabled: true
+#    sampling:
+#      probability: 1.0
